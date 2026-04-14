@@ -507,9 +507,9 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-actions">
-    <button class="nav-btn" id="wishlistNavBtn" onclick="openModal('wishlistModal')">❤️ Wishlist <span class="badge" id="wishlistCount">0</span></button>
-    <button class="nav-btn" id="ordersNavBtn" onclick="openModal('ordersModal')">📋 Orders</button>
-    <button class="nav-btn" id="cartNavBtn" onclick="openModal('cartModal')">🛒 Cart <span class="badge" id="cartCount">0</span></button>
+    <button class="nav-btn" id="wishlistNavBtn" onclick="openWishlistModal()">❤️ Wishlist <span class="badge" id="wishlistCount">0</span></button>
+    <button class="nav-btn" id="ordersNavBtn" onclick="openOrdersModal()">📋 Orders</button>
+    <button class="nav-btn" id="cartNavBtn" onclick="openCartModal()">🛒 Cart <span class="badge" id="cartCount">0</span></button>
     <button class="nav-btn login-nav-btn" id="loginNavBtn" onclick="handleAuthClick()">👤 Login</button>
   </div>
   <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -524,9 +524,9 @@
   <a href="#about" onclick="closeMobileMenu()">About</a>
   <a href="#contact" onclick="closeMobileMenu()">Contact</a>
   <div class="mobile-menu-actions">
-    <button class="nav-btn" onclick="openModal('wishlistModal');closeMobileMenu()">❤️ Wishlist <span class="badge" id="wishlistCountM">0</span></button>
-    <button class="nav-btn" onclick="openModal('ordersModal');closeMobileMenu()">📋 Orders</button>
-    <button class="nav-btn" onclick="openModal('cartModal');closeMobileMenu()">🛒 Cart <span class="badge" id="cartCountM">0</span></button>
+    <button class="nav-btn" onclick="openWishlistModal();closeMobileMenu()">❤️ Wishlist <span class="badge" id="wishlistCountM">0</span></button>
+    <button class="nav-btn" onclick="openOrdersModal();closeMobileMenu()">📋 Orders</button>
+    <button class="nav-btn" onclick="openCartModal();closeMobileMenu()">🛒 Cart <span class="badge" id="cartCountM">0</span></button>
     <button class="nav-btn" onclick="handleAuthClick();closeMobileMenu()" id="loginNavBtnM">👤 Login</button>
   </div>
 </div>
@@ -1178,3 +1178,7 @@ updateAuthUI();
     .filter-tab { padding: 7px 14px; font-size: 0.78rem; }
   }
 </style>
+
+<script src="app.js"></script>
+</body>
+</html>
