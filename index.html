@@ -233,12 +233,18 @@ footer{text-align:center;padding:40px;background:#2D1810;color:#a08070;}
 
 // ── Product Data ──────────────────────────────────────────
 const products = [
-  { id:1, name:"Cappuccino", desc:"Rich espresso topped with velvety steamed milk foam. A classic Italian favourite.", price:3.50, img:"https://images.unsplash.com/photo-1509042239860-f550ce710b93", rating:4.5 },
-  { id:2, name:"Latte",      desc:"Smooth espresso blended with creamy steamed milk. Perfect for any time of day.", price:4.00, img:"https://images.unsplash.com/photo-1495474472287-4d71bcdd2085", rating:4.7 },
-  { id:3, name:"Mocha",      desc:"A rich blend of espresso, chocolate syrup and steamed milk. Dessert in a cup.", price:4.50, img:"https://images.unsplash.com/photo-1511920170033-f8396924c348", rating:4.8 },
-  { id:4, name:"Espresso",   desc:"Bold, concentrated coffee shot. The foundation of all great coffee drinks.", price:2.50, img:"https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04", rating:4.3 },
-  { id:5, name:"Cold Brew",  desc:"Slow-steeped for 12 hours for an ultra-smooth, naturally sweet cold coffee.", price:5.00, img:"https://images.unsplash.com/photo-1461023058943-07fcbe16d735", rating:4.6 },
-  { id:6, name:"Flat White", desc:"Velvety microfoam espresso with a higher coffee-to-milk ratio. Barista favourite.", price:4.00, img:"https://images.unsplash.com/photo-1572442388796-11668a67e53d", rating:4.4 },
+  { id:1,  name:"Cappuccino",     desc:"Rich espresso topped with velvety steamed milk foam. A classic Italian favourite.", price:3.50, img:"https://images.unsplash.com/photo-1509042239860-f550ce710b93", rating:4.5 },
+  { id:2,  name:"Latte",          desc:"Smooth espresso blended with creamy steamed milk. Perfect for any time of day.", price:4.00, img:"https://images.unsplash.com/photo-1495474472287-4d71bcdd2085", rating:4.7 },
+  { id:3,  name:"Mocha",          desc:"A rich blend of espresso, chocolate syrup and steamed milk. Dessert in a cup.", price:4.50, img:"https://images.unsplash.com/photo-1511920170033-f8396924c348", rating:4.8 },
+  { id:4,  name:"Espresso",       desc:"Bold, concentrated coffee shot. The foundation of all great coffee drinks.", price:2.50, img:"https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04", rating:4.3 },
+  { id:5,  name:"Cold Brew",      desc:"Slow-steeped for 12 hours for an ultra-smooth, naturally sweet cold coffee.", price:5.00, img:"https://images.unsplash.com/photo-1461023058943-07fcbe16d735", rating:4.6 },
+  { id:6,  name:"Flat White",     desc:"Velvety microfoam espresso with a higher coffee-to-milk ratio. Barista favourite.", price:4.00, img:"https://images.unsplash.com/photo-1572442388796-11668a67e53d", rating:4.4 },
+  { id:7,  name:"Americano",      desc:"Espresso diluted with hot water for a smooth, bold black coffee experience.", price:3.00, img:"https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd", rating:4.2 },
+  { id:8,  name:"Macchiato",      desc:"Espresso 'stained' with a dash of foamed milk. Strong yet balanced.", price:3.50, img:"https://images.unsplash.com/photo-1485808191679-5f86510bd9d4", rating:4.4 },
+  { id:9,  name:"Irish Coffee",   desc:"Hot coffee with Irish whiskey, brown sugar and whipped cream on top.", price:6.50, img:"https://images.unsplash.com/photo-1544787219-7f47ccb76574", rating:4.6 },
+  { id:10, name:"Iced Latte",     desc:"Chilled espresso poured over ice with cold milk. Refreshing and creamy.", price:4.50, img:"https://images.unsplash.com/photo-1517701604599-bb29b565090c", rating:4.7 },
+  { id:11, name:"Affogato",       desc:"A scoop of vanilla ice cream drowned in a hot espresso shot. Pure indulgence.", price:5.50, img:"https://images.unsplash.com/photo-1568649929103-28ffbefaca1e", rating:4.9 },
+  { id:12, name:"Turkish Coffee", desc:"Finely ground coffee brewed in a cezve. Rich, strong and unfiltered.", price:3.50, img:"https://images.unsplash.com/photo-1578374173705-969cbe6f2d6b", rating:4.5 },
 ];
 
 const COUPONS = { "COFFEE10": 10, "BREW20": 20, "ARTISAN15": 15 };
