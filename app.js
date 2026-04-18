@@ -372,3 +372,61 @@ document.addEventListener("DOMContentLoaded",()=>{
 });
 
 
+
+// ── INIT ─────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Loader
+  setTimeout(function() {
+    var l = document.getElementById('loader');
+    if (l) { l.style.opacity = '0'; l.style.transition = 'opacity 0.6s'; setTimeout(function(){ l.style.display='none'; }, 600); }
+  }, 2200);
+
+  // Navbar scroll
+  window.addEventListener('scroll', function() {
+    var n = document.getElementById('navbar');
+    if (n) n.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Hamburger
+  var hb = document.getElementById('hamburger');
+  if (hb) hb.addEventListener('click', function() {
+    hb.classList.toggle('open');
+    document.getElementById('mobileMenu').classList.toggle('open');
+  });
+
+  // Search & Sort
+  var si = document.getElementById('searchInput');
+  var ss = document.getElementById('sortSelect');
+  if (si) si.addEventListener('input', filterProducts);
+  if (ss) ss.addEventListener('change', filterProducts);
+
+  // Filter tabs
+  var ft = document.getElementById('filterTabs');
+  if (ft) ft.addEventListener('click', function(e) {
+    var btn = e.target.closest('.filter-tab');
+    if (!btn) return;
+    document.querySelectorAll('.filter-tab').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    activeCategory = btn.dataset.cat;
+    filterProducts();
+  });
+
+  // Fade-in observer
+  var obs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e){ if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(function(el){ obs.observe(el); });
+
+  // INIT
+  renderProducts(products);
+  updateAuthUI();
+  updateCartCount();
+});
+
+function closeMobileMenu() {
+  var hb = document.getElementById('hamburger');
+  if (hb) hb.classList.remove('open');
+  var mm = document.getElementById('mobileMenu');
+  if (mm) mm.classList.remove('open');
+}
