@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -238,7 +238,34 @@ const products = [
   { id:3, name:"Mocha",      desc:"A rich blend of espresso, chocolate syrup and steamed milk. Dessert in a cup.", price:4.50, img:"https://images.unsplash.com/photo-1511920170033-f8396924c348", rating:4.8 },
   { id:4, name:"Espresso",   desc:"Bold, concentrated coffee shot. The foundation of all great coffee drinks.", price:2.50, img:"https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04", rating:4.3 },
   { id:5, name:"Cold Brew",  desc:"Slow-steeped for 12 hours for an ultra-smooth, naturally sweet cold coffee.", price:5.00, img:"https://images.unsplash.com/photo-1461023058943-07fcbe16d735", rating:4.6 },
-  { id:6, name:"Flat White", desc:"Velvety microfoam espresso with a higher coffee-to-milk ratio. Barista favourite.", price:4.00, img:"https://images.unsplash.com/photo-1572442388796-11668a67e53d", rating:4.4 },
+  { id:6,  name:"Flat White",            desc:"Velvety microfoam espresso with a higher coffee-to-milk ratio. Barista favourite.", price:4.00,  img:"https://images.unsplash.com/photo-1572442388796-11668a67e53d", rating:4.4 },
+  { id:7,  name:"Americano",             desc:"Espresso diluted with hot water for a smooth, bold black coffee experience.", price:3.00,  img:"https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd", rating:4.2 },
+  { id:8,  name:"Macchiato",             desc:"Espresso stained with a dash of foamed milk. Strong yet balanced.", price:3.50,  img:"https://images.unsplash.com/photo-1485808191679-5f86510bd9d4", rating:4.4 },
+  { id:9,  name:"Irish Coffee",          desc:"Hot coffee with Irish whiskey, brown sugar and whipped cream on top.", price:6.50,  img:"https://images.unsplash.com/photo-1544787219-7f47ccb76574", rating:4.6 },
+  { id:10, name:"Iced Latte",            desc:"Chilled espresso poured over ice with cold milk. Refreshing and creamy.", price:4.50,  img:"https://images.unsplash.com/photo-1517701604599-bb29b565090c", rating:4.7 },
+  { id:11, name:"Affogato",              desc:"A scoop of vanilla ice cream drowned in a hot espresso shot. Pure indulgence.", price:5.50,  img:"https://images.unsplash.com/photo-1568649929103-28ffbefaca1e", rating:4.9 },
+  { id:12, name:"Turkish Coffee",        desc:"Finely ground coffee brewed in a cezve. Rich, strong and unfiltered.", price:3.50,  img:"https://images.unsplash.com/photo-1578374173705-969cbe6f2d6b", rating:4.5 },
+  { id:13, name:"Cortado",               desc:"Equal parts espresso and warm milk. Less acidic, smooth and balanced.", price:3.50,  img:"https://images.unsplash.com/photo-1534778101976-62847782c213", rating:4.4 },
+  { id:14, name:"Dalgona Coffee",        desc:"Whipped instant coffee foam over cold milk. The viral sensation.", price:4.00,  img:"https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e", rating:4.7 },
+  { id:15, name:"Nitro Cold Brew",       desc:"Cold brew infused with nitrogen for a creamy, stout-like texture.", price:5.50,  img:"https://images.unsplash.com/photo-1558618666-fcd25c85cd64", rating:4.8 },
+  { id:16, name:"Caramel Macchiato",     desc:"Vanilla syrup, steamed milk, espresso and caramel drizzle. Sweet perfection.", price:5.00,  img:"https://images.unsplash.com/photo-1485808191679-5f86510bd9d4", rating:4.7 },
+  { id:17, name:"Hazelnut Latte",        desc:"Espresso with hazelnut syrup and creamy steamed milk. Nutty and smooth.", price:4.50,  img:"https://images.unsplash.com/photo-1517701604599-bb29b565090c", rating:4.6 },
+  { id:18, name:"Coconut Latte",         desc:"Espresso with coconut milk and a hint of vanilla. Tropical and creamy.", price:5.00,  img:"https://images.unsplash.com/photo-1461023058943-07fcbe16d735", rating:4.6 },
+  { id:19, name:"Matcha Latte",          desc:"Premium Japanese matcha blended with steamed milk. Earthy and calming.", price:5.50,  img:"https://images.unsplash.com/photo-1536256263959-770b48d82b0a", rating:4.7 },
+  { id:20, name:"Frappuccino",           desc:"Blended ice, espresso and milk topped with whipped cream. A frozen treat.", price:5.50,  img:"https://images.unsplash.com/photo-1461023058943-07fcbe16d735", rating:4.9 },
+  { id:21, name:"Iced Mocha",            desc:"Espresso, chocolate syrup, cold milk and ice. Rich and indulgent.", price:5.00,  img:"https://images.unsplash.com/photo-1511920170033-f8396924c348", rating:4.7 },
+  { id:22, name:"Vienna Coffee",         desc:"Strong black coffee topped with whipped cream. An Austrian classic.", price:4.50,  img:"https://images.unsplash.com/photo-1606791405792-1004f1718d0c", rating:4.6 },
+  { id:23, name:"Kopi Luwak",            desc:"The world's rarest coffee, processed through a civet cat. Earthy and smooth.", price:35.00, img:"https://images.unsplash.com/photo-1447933601403-0c6688de566e", rating:4.9 },
+  { id:24, name:"Black Ivory Coffee",    desc:"Thai elephant-processed coffee. Ultra-rare, sweet and complex flavour.", price:45.00, img:"https://images.unsplash.com/photo-1504630083234-14187a9df0f5", rating:5.0 },
+  { id:25, name:"Jamaican Blue Mountain",desc:"Grown at 7,500ft altitude. Mild, bright and virtually no bitterness.", price:28.00, img:"https://images.unsplash.com/photo-1498804103079-a6351b050096", rating:4.9 },
+  { id:26, name:"Panama Geisha",         desc:"Floral, jasmine-like aroma with tea-like body. The most awarded coffee.", price:30.00, img:"https://images.unsplash.com/photo-1511920170033-f8396924c348", rating:5.0 },
+  { id:27, name:"Hawaiian Kona",         desc:"Sun-grown on volcanic slopes of Hawaii. Rich, smooth and aromatic.", price:22.00, img:"https://images.unsplash.com/photo-1495474472287-4d71bcdd2085", rating:4.8 },
+  { id:28, name:"Indian Cold Coffee",    desc:"Chilled milk blended with instant coffee and sugar. Desi style creamy delight.", price:2.50,  img:"https://images.unsplash.com/photo-1461023058943-07fcbe16d735", rating:4.6 },
+  { id:29, name:"Filter Coffee Shake",   desc:"South Indian filter coffee blended with cold milk and ice. Strong and refreshing.", price:3.00,  img:"https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd", rating:4.7 },
+  { id:30, name:"Kesar Cold Coffee",     desc:"Saffron-infused cold coffee with chilled milk. Royal Indian treat.", price:4.00,  img:"https://images.unsplash.com/photo-1509042239860-f550ce710b93", rating:4.9 },
+  { id:31, name:"Badam Cold Coffee",     desc:"Cold coffee with almond paste and saffron. Rich Indian fusion flavour.", price:3.50,  img:"https://images.unsplash.com/photo-1517701604599-bb29b565090c", rating:4.8 },
+  { id:32, name:"Rose Cold Coffee",      desc:"Cold coffee with rose syrup and chilled milk. Floral, sweet and unique.", price:3.00,  img:"https://images.unsplash.com/photo-1572442388796-11668a67e53d", rating:4.5 },
+  { id:33, name:"Irani Cold Coffee",     desc:"Inspired by Irani cafes of Hyderabad. Creamy, sweet and deeply satisfying.", price:3.50,  img:"https://images.unsplash.com/photo-1495474472287-4d71bcdd2085", rating:4.7 },
 ];
 
 const COUPONS = { "COFFEE10": 10, "BREW20": 20, "ARTISAN15": 15 };
